@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --black-col: #000000;
+    --white-col: #ffffff;
+    --orange-col: #FD5B2F;
+    --monstrrat-font: 'Montserrat', sans-serif;
+    ;
+    --open-sans-font: 'Open Sans', sans-serif;
+}
+
+body {
+    padding: 2rem 1.25rem;
+}
+
+ul li {
+    list-style: none;
+    margin-right: 2.5rem;
+
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--black-col);
+    font-family: var(--monstrrat-font);
+    font-weight: 500;
+    font-size: 1rem;
+
+}
+
+.links-container {
+    display: none;
+}
+
+.logo {
+    height: 20px;
+}
+
+.hamburger {
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    height: 30px;
+}
+
+.hero-image-container {
+    width: 100vw;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.hero-image-container img {
+    max-width: 85%;
+
+}
+
+.hero-text-container {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.hero-vector {
+    height: 0.625rem;
+}
+
+.booked-visit {
+    height: 1.5rem;
+    margin-top: 0.625rem;
+}
+
+.hero-text-container h1 {
+    position: relative;
+    font-family: var(--open-sans-font);
+    font-weight: 700;
+    font-size: 1.75rem;
+    text-align: center;
+
+}
+
+
+.logos-section {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 3rem auto;
+}
+
+.logos-grid img {
+    margin: 0 1rem 1rem;
+}
+
+.service-image-container {
+    width: 100vw;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.service-image-container img {
+    max-width: 75%;
+}
+
+
+/*---------------------------------------- TABLET ---------------------------------------------------------*/
+
+@media only screen and (min-width: 641px) {
+    .hero-text-container h1 {
+        font-size: 2.5rem;
+    }
+
+    .hamburger {
+        right: 30px;
+    }
+}
+
+/*---------------------------------------------- LAPTOP ----------------------------------------------------*/
+
+@media only screen and (min-width: 1010px) {
+    .hamburger {
+        display: none;
+    }
+
+    .links-container {
+        display: flex;
+    }
+
+    .links-container ul {
+        display: flex;
+    }
+
+    header {
+        position: relative;
+        z-index: 50;
+        width: 90%;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+    .hero-section {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+    }
+
+    .hero-text-container {
+        text-align: left;
+        margin-left: 9rem;
+    }
+
+    .hero-text-container h1 {
+        text-align: left;
+        font-size: 3.625rem;
+        width: 30rem;
+    }
+
+    .booked-visit {
+        height: 2rem;
+    }
+}
